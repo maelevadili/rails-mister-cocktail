@@ -1,0 +1,8 @@
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :ingredient_id, collection: @ingredients %>
+  <%= f.input :description %>
+  <%= f.submit "Add Ingredient", class: "btn btn-primary" %>
+<% end %>
+
+<!-- Ce qu'on passe derriere 'simple_form_for', ce sont les trucs dont on a
+  besoin pour construire L'URL (strong params), pas pour construire le form -->

@@ -1,0 +1,9 @@
+<h1>Here are some awesome ingredients for you to make awesome cocktails</h1>
+
+<ul>
+  <% @ingredients.each do |ingredient|  %>
+      <li>
+        <%= ingredient.name.capitalize %>
+      </li>
+  <% end %>
+</ul>

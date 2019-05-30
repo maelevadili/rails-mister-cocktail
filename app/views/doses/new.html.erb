@@ -1,0 +1,5 @@
+<h1>Add an ingredient to your <%=@cocktail.name  %> cocktail</h1>
+
+<%= render 'form', dose: @dose_params %>
+<hr>
+<%= link_to cocktails_path do %> Back to cocktail list <% end %>
