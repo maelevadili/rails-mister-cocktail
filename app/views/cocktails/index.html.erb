@@ -1,12 +1,29 @@
-<h1>Here are some awesome cocktails</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://www.vranken.net/wp-content/uploads/2018/04/cocktails-pour-les-f%C3%AAtes.jpg);">
+  <div class="container">
+    <h1>Welcome to Mister Cocktail!</h1>
+    <h2>Discover plenty of awesome cocktails in a snap</h2>
+    <%= link_to new_cocktail_path, class: "btn btn-primary" do %>
+    <strong><i class="far fa-plus-square"></i> Add a new cocktail</strong>
+    <% end %>
+  </div>
+</div>
 
-<ul>
-  <% @cocktails.each do |cocktail|  %>
-      <li>
-        <%= link_to cocktail.name.capitalize, cocktail_path(cocktail) %>
-      </li>
-  <% end %>
-</ul>
+<div class='container'>
+  <h3>Here are some awesome cocktails</h3>
 
-<hr>
-<%= link_to new_cocktail_path do %> Add a new cocktail <% end %>
+   <div class='cards'>
+      <% @cocktails.each do |cocktail|  %>
+        <div class="card-cocktail">
+          <%= link_to cocktail_path(cocktail) do %>
+            <img src="https://static.lexpress.fr/medias_10472/w_2048,h_1146,c_crop,x_0,y_140/w_480,h_270,c_fill,g_north/v1484239012/cocktail-5_5361665.jpg", height="200px">
+          <% end %>
+          <div class="card-cocktail-infos">
+            <div>
+              <h2><%= cocktail.name.capitalize %></h2>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
