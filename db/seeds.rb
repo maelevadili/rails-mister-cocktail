@@ -8,23 +8,21 @@
 
 require 'faker'
 
-# Ingredient.destroy_all
-
-# Ingredient.create(name: 'lemon')
-# Ingredient.create(name: 'ice')
-# Ingredient.create(name: 'mint leaves')
-# Ingredient.create(name: 'rhum')
-# Ingredient.create(name: 'cane sugar')
-# Ingredient.create(name: 'vodka')
-# Ingredient.create(name: 'tomato juice')
-# Ingredient.create(name: 'worcestershire sauce')
-# Ingredient.create(name: 'tabasco')
-# Ingredient.create(name: 'salt')
-# Ingredient.create(name: 'honey')
-# Ingredient.create(name: 'pineapple juice')
-# Ingredient.create(name: 'coconut milk')
-# Ingredient.create(name: 'cinnamon syrup')
-Ingredient.create(name: 'grapefruit juice')
+Ingredient.create!(name: 'lemon')
+Ingredient.create!(name: 'ice')
+Ingredient.create!(name: 'mint leaves')
+Ingredient.create!(name: 'rhum')
+Ingredient.create!(name: 'cane sugar')
+Ingredient.create!(name: 'vodka')
+Ingredient.create!(name: 'tomato juice')
+Ingredient.create!(name: 'worcestershire sauce')
+Ingredient.create!(name: 'tabasco')
+Ingredient.create!(name: 'salt')
+Ingredient.create!(name: 'honey')
+Ingredient.create!(name: 'pineapple juice')
+Ingredient.create!(name: 'coconut milk')
+Ingredient.create!(name: 'cinnamon syrup')
+Ingredient.create!(name: 'grapefruit juice')
 
 # puts 'Creating 10 fake ingredients...'
 # 11.times do
@@ -35,8 +33,8 @@ Ingredient.create(name: 'grapefruit juice')
 # end
 # puts 'Finished!'
 
-# puts 'Creating 3 fake cocktails...'
-# Cocktail.create(name: 'Mojito')
-# Cocktail.create(name: 'Bloody Mary')
-# Cocktail.create(name: 'Ti punch')
-# puts 'Finished!'
+puts 'Creating 3 fake cocktails...'
+Cocktail.create!(name: 'Mojito')
+Cocktail.create!(name: 'Bloody Mary')
+Cocktail.create!(name: 'Ti punch')
+puts 'Finished!'
